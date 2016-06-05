@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Şebnem Ferah - Benim Adım Orman - PowereXe Müzik</title>
+<link rel='shortcut icon' type='image/x-icon' href='favicon.png' />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="jplayer.red.exe.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()))
+if(mobile){
+document.location="../mobil/Sebnem-Ferah-Benim-Adim-Orman.html";
+}</script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="jplayer.playlist.min.js"></script>
+<script type="text/javascript" src="functions.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	new jPlayerPlaylist({
+		jPlayer: "#jquery_jplayer_1",
+		cssSelectorAncestor: "#jp_container_1"
+	}, [
+		
+		{
+			title:"Şebnem Ferah - Ateşe Yakın",
+			mp3:"musics/Sebnem-Ferah/Atese-Yakin.mp3"
+		},
+		{
+			title:"Şebnem Ferah - Bazı Aşklar",
+			mp3:"musics/Sebnem-Ferah/Bazi-Asklar.mp3"
+		},
+		{
+			title:"Şebnem Ferah - Benim Adım Orman",
+			mp3:"musics/Sebnem-Ferah/Benim-Adim-Orman.mp3"
+		},
+		{
+			title:"Şebnem Ferah - Eski",
+			mp3:"musics/Sebnem-Ferah/Eski.mp3"
+		},
+		{
+			title:"Şebnem Ferah - İnsanlık",
+			mp3:"musics/Sebnem-Ferah/Insanlik.mp3"
+		},
+		{
+			title:"Şebnem Ferah - İstiklal Caddesi Kadar",
+			mp3:"musics/Sebnem-Ferah/Istiklal-Caddesi-Kadar.mp3"
+		},
+		{
+			title:"Şebnem Ferah - Mahalle",
+			mp3:"musics/Sebnem-Ferah/Mahalle.mp3"
+		},
+		{
+			title:"Şebnem Ferah - Merhaba",
+			mp3:"musics/Sebnem-Ferah/Merhaba.mp3"
+		},
+		{
+			title:"Şebnem Ferah - Uçurtma",
+			mp3:"musics/Sebnem-Ferah/Ucurtma.mp3"
+		},
+		{
+			title:"Şebnem Ferah - Yalnız",
+			mp3:"musics/Sebnem-Ferah/Yalniz.mp3"
+		},/* Müzik Ekle */
+	], {
+		swfPath: "../../dist/jplayer",
+		supplied: "oga, mp3",
+		wmode: "window",
+		volume: 1.0,
+		useStateClassSkin: true,
+		autoBlur: false,
+		smoothPlayBar: true,
+		keyEnabled: true
+	});
+});
+//]]>
+</script>
+</head>
+<body>
+<script type="text/javascript" src="banner.js"></script>
+<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+	<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+		<div class="jp-type-playlist">
+			<div class="jp-gui jp-interface">
+				<div class="jp-controls">
+					<button class="jp-previous" role="button" tabindex="0">previous</button>
+					<button class="jp-play" role="button" tabindex="0">play</button>
+					<button class="jp-next" role="button" tabindex="0">next</button>
+				</div>
+				<div class="jp-progress">
+					<div class="jp-seek-bar">
+						<div class="jp-play-bar"></div>
+					</div>
+				</div>
+				<div class="jp-time-holder">
+					<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+					<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+				</div>
+				<div class="jp-toggles">
+					<button class="jp-repeat" role="button" tabindex="0">repeat</button>
+					<button class="jp-shuffle" role="button" tabindex="0">shuffle</button>
+					<button class="px-download" role="button" tabindex="0" style="width:30px;height:30px;" onclick="DownloadList();">download</button>
+					<button class="px-youtube" role="button" tabindex="0" style="width:45px;height:32px;" onclick="YoutubeList();">youtube</button>
+				</div>
+			</div>
+			<div style="width:70%;">
+				<div style="display:block;" class="jp-playlist" id="jp-playlist">
+					<ul>
+						<li>&nbsp;</li>
+					</ul>
+				</div>
+				<div style="display:none;" class="download-playlist" id="download-playlist">
+					<br>
+					<div style="cursor:pointer;" onclick="PlayList();"><a style="color:black;padding-left:20px;">Müzik Listesine Geri Dön</a></div><hr>
+					<div class="download-playlist-item"><a class="dp-item" href="musics/Sebnem-Ferah/Atese-Yakin.mp3" download>Şebnem Ferah - Ateşe Yakın</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="musics/Sebnem-Ferah/Bazi-Asklar.mp3" download>Şebnem Ferah - Bazı Aşklar</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="musics/Sebnem-Ferah/Benim-Adim-Orman.mp3" download>Şebnem Ferah - Benim Adım Orman</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="musics/Sebnem-Ferah/Eski.mp3" download>Şebnem Ferah - Eski</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="musics/Sebnem-Ferah/Insanlik.mp3" download>Şebnem Ferah - İnsanlık</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="musics/Sebnem-Ferah/Istiklal-Caddesi-Kadar.mp3" download>Şebnem Ferah - İstiklal Caddesi Kadar</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="musics/Sebnem-Ferah/Mahalle.mp3" download>Şebnem Ferah - Mahalle</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="musics/Sebnem-Ferah/Merhaba.mp3" download>Şebnem Ferah - Merhaba</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="musics/Sebnem-Ferah/Ucurtma.mp3" download>Şebnem Ferah - Uçurtma</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="musics/Sebnem-Ferah/Yalniz.mp3" download>Şebnem Ferah - Yalnız</a></div>
+				<!-- [Download Ekle] !-->
+				</div>
+				<div style="display:none;" class="youtube-playlist" id="youtube-playlist">
+					<br>
+					<div style="cursor:pointer;" onclick="PlayList();"><a style="color:black;padding-left:20px;">Müzik Listesine Geri Dön</a></div><hr>
+					<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=76RVmG2p7PI', '_blank');"><a class="yt-item">Şebnem Ferah - Ateşe Yakın</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=5FnaLBpA2X8', '_blank');"><a class="yt-item">Şebnem Ferah - Bazı Aşklar</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=0QWuyNnAc2M', '_blank');"><a class="yt-item">Şebnem Ferah - Benim Adım Orman</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=Cq8uDaeeh5U', '_blank');"><a class="yt-item">Şebnem Ferah - Eski</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=Ml5wlfW_rH0', '_blank');"><a class="yt-item">Şebnem Ferah - İnsanlık</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=OzFRE5nWkOA', '_blank');"><a class="yt-item">Şebnem Ferah - İstiklal Caddesi Kadar</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=Hc5miLTe5X4', '_blank');"><a class="yt-item">Şebnem Ferah - Mahalle</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=6pTrzRXDwK8', '_blank');"><a class="yt-item">Şebnem Ferah - Merhaba</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=7EbyZycou6k', '_blank');"><a class="yt-item">Şebnem Ferah - Uçurtma</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=oqx6qt6jCm8', '_blank');"><a class="yt-item">Şebnem Ferah - Yalnız</a></div>
+				<!-- [Youtube Ekle] !-->
+				</div>
+				<div class="jp-no-solution">
+					<span>Update Required</span>
+					Flash Player Desteklenmiyor. Lütfen <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a> Indirin.
+				</div>
+			</div>
+	</div>
+</div>
+<div class="px-rightdiv">
+	<div id="Albumler">
+		<pre class="px-pre"><font class="px-prefont"><center>Sanatçının Diğer Albümleri :</font></center></pre>
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Sebnem-Ferah.html';"><font class="px-fontindiv"><center>Şebnem Ferahin Tüm Şarkıları</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Sebnem-Ferah-Kadin.html';"><font class="px-fontindiv"><center>Şebnem Ferah - Kadın</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Sebnem-Ferah-Artik-Kisa-Cumleler-Kuruyorum.html';"><font class="px-fontindiv"><center>Şebnem Ferah - Artık Kısa Cümleler Kuruyorum</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Sebnem-Ferah-Perdeler.html';"><font class="px-fontindiv"><center>Şebnem Ferah - Perdeler</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Sebnem-Ferah-Kelimeler-Yetse.html';"><font class="px-fontindiv"><center>Şebnem Ferah - Kelimeler Yetse</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Sebnem-Ferah-Can-Kiriklari.html';"><font class="px-fontindiv"><center>Şebnem Ferah - Can Kırıkları</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Sebnem-Ferah-Od.html';"><font class="px-fontindiv"><center>Şebnem Ferah - Od</font></center></div> 
+                                <!-- Albüm Adı Ekle !-->
+	</div>
+	<script type="text/javascript" src="news.js"></script>
+</div>
+<br/>
+<div class="px-son">
+<br/><font class="px-fontinson" color=white><center>istek, şikayet ve öneri için <a style="color:#ccc;">fatih.yarligan@outlook.com</a></center></font>
+<hr/><font class="px-fontinson" color=white><center>design by <a style="color:#ccc;">Fatih Yarlıgan</a></center></font>
+</div>
+</body>
+
+</html>

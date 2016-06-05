@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Model - Perili Sirk - PowereXe Müzik</title>
+<link rel='shortcut icon' type='image/x-icon' href='favicon.png' />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="jplayer.red.exe.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()))
+if(mobile){
+document.location="../mobil/Model-Perili-Sirk.html";
+}</script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="jplayer.playlist.min.js"></script>
+<script type="text/javascript" src="functions.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	new jPlayerPlaylist({
+		jPlayer: "#jquery_jplayer_1",
+		cssSelectorAncestor: "#jp_container_1"
+	}, [
+		
+		{
+			title:"Model - Açılış",
+			mp3:"musics/Model/Model-Acilis.mp3"
+		},
+		{
+			title:"Model - Bak Bir Varmış Bir Yokmuş",
+			mp3:"musics/Model/Model-Bak-Bir-Varmis-Bir-Yokmus.mp3"
+		},
+		{
+			title:"Model - Bu Matem Dolu Cennet",
+			mp3:"musics/Model/Model-Bu-Matem-Dolu-Cennet.mp3"
+		},
+		{
+			title:"Model - Ego Dağları",
+			mp3:"musics/Model/Model-Ego-Daglari.mp3"
+		},
+		{
+			title:"Model - Ellerinde Ellerim",
+			mp3:"musics/Model/Model-Ellerinde-Ellerim.mp3"
+		},
+		{
+			title:"Model - Olmaz",
+			mp3:"musics/Model/Model-Olmaz.mp3"
+		},/* Müzik Ekle */
+	], {
+		swfPath: "../../dist/jplayer",
+		supplied: "oga, mp3",
+		wmode: "window",
+		volume: 1.0,
+		useStateClassSkin: true,
+		autoBlur: false,
+		smoothPlayBar: true,
+		keyEnabled: true
+	});
+});
+//]]>
+</script>
+</head>
+<body>
+<script type="text/javascript" src="banner.js"></script>
+<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+	<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+		<div class="jp-type-playlist">
+			<div class="jp-gui jp-interface">
+				<div class="jp-controls">
+					<button class="jp-previous" role="button" tabindex="0">previous</button>
+					<button class="jp-play" role="button" tabindex="0">play</button>
+					<button class="jp-next" role="button" tabindex="0">next</button>
+				</div>
+				<div class="jp-progress">
+					<div class="jp-seek-bar">
+						<div class="jp-play-bar"></div>
+					</div>
+				</div>
+				<div class="jp-time-holder">
+					<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+					<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+				</div>
+				<div class="jp-toggles">
+					<button class="jp-repeat" role="button" tabindex="0">repeat</button>
+					<button class="jp-shuffle" role="button" tabindex="0">shuffle</button>
+					<button class="px-download" role="button" tabindex="0" style="width:30px;height:30px;" onclick="DownloadList();">download</button>
+					<button class="px-youtube" role="button" tabindex="0" style="width:45px;height:32px;" onclick="YoutubeList();">youtube</button>
+				</div>
+			</div>
+			<div style="width:70%;">
+				<div style="display:block;" class="jp-playlist" id="jp-playlist">
+					<ul>
+						<li>&nbsp;</li>
+					</ul>
+				</div>
+				<div style="display:none;" class="download-playlist" id="download-playlist">
+					<br>
+					<div style="cursor:pointer;" onclick="PlayList();"><a style="color:black;padding-left:20px;">Müzik Listesine Geri Dön</a></div><hr>
+					<div class="download-playlist-item"><a class="dp-item" href="musics/Model/Model-Acilis.mp3" download>Model - Açılış</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="musics/Model/Model-Bak-Bir-Varmis-Bir-Yokmus.mp3" download>Model - Bak Bir Varmış Bir Yokmuş</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="musics/Model/Model-Bu-Matem-Dolu-Cennet.mp3" download>Model - Bu Matem Dolu Cennet</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="musics/Model/Model-Ego-Daglari.mp3" download>Model - Ego Dağları</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="musics/Model/Model-Ellerinde-Ellerim.mp3" download>Model - Ellerinde Ellerim</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="musics/Model/Model-Olmaz.mp3" download>Model - Olmaz</a></div>
+				<!-- [Download Ekle] !-->
+				</div>
+				<div style="display:none;" class="youtube-playlist" id="youtube-playlist">
+					<br>
+					<div style="cursor:pointer;" onclick="PlayList();"><a style="color:black;padding-left:20px;">Müzik Listesine Geri Dön</a></div><hr>
+					<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=R9VIqW-hzIQ', '_blank');"><a class="yt-item">Model - Açılış</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=-w03O4YJYV0', '_blank');"><a class="yt-item">Model - Bak Bir Varmış Bir Yokmuş</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=rIeWgNGRPvE', '_blank');"><a class="yt-item">Model - Bu Matem Dolu Cennet</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=S4N3Mzst2bA', '_blank');"><a class="yt-item">Model - Ego Dağları</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=azm_Ah8nsE8', '_blank');"><a class="yt-item">Model - Ellerinde Ellerim</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=BPeLzzzQobE', '_blank');"><a class="yt-item">Model - Olmaz</a></div>
+				<!-- [Youtube Ekle] !-->
+				</div>
+				<div class="jp-no-solution">
+					<span>Update Required</span>
+					Flash Player Desteklenmiyor. Lütfen <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a> Indirin.
+				</div>
+			</div>
+	</div>
+</div>
+<div class="px-rightdiv">
+	<div id="Albumler">
+		<pre class="px-pre"><font class="px-prefont"><center>Sanatçının Diğer Albümleri :</font></center></pre>
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Model.html';"><font class="px-fontindiv"><center>Modelin Tüm Şarkıları</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Model-Diger-Masallar.html';"><font class="px-fontindiv"><center>Model - Diğer Masallar</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Model-Levlanin-Hikayesi.html';"><font class="px-fontindiv"><center>Model - Levlâ'nın Hikâyesi</font></center></div> 
+                                <!-- Albüm Adı Ekle !-->
+	</div>
+	<script type="text/javascript" src="news.js"></script>
+</div>
+<br/>
+<div class="px-son">
+<br/><font class="px-fontinson" color=white><center>istek, şikayet ve öneri için <a style="color:#ccc;">fatih-yarligan@outlook.com</a></center></font>
+<hr/><font class="px-fontinson" color=white><center>design by <a style="color:#ccc;">Fatih Yarlıgan</a></center></font>
+</div>
+</body>
+
+</html>

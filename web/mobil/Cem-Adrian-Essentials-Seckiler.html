@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Cem Adrian - Essentials Seckiler - PowereXe Müzik</title>
+<link rel='shortcut icon' type='image/x-icon' href='../favicon.png' />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="jplayer.red.exe.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../jquery.min.js"></script>
+<script type="text/javascript" src="../jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="../jplayer.playlist.min.js"></script>
+<script type="text/javascript" src="../functions.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	new jPlayerPlaylist({
+		jPlayer: "#jquery_jplayer_1",
+		cssSelectorAncestor: "#jp_container_1"
+	}, [
+		
+		{
+			title:"Cem Adrian - Ah Bir Ataş Ver",
+			mp3:"./musics/Cem-Adrian/Cem-Adrian-Ah-Bir-Atas-Ver.mp3"
+		},
+		{
+			title:"Cem Adrian - Al Fadimem",
+			mp3:"./musics/Cem-Adrian/Cem-Adrian-Al-Fadimem.mp3"
+		},
+		{
+			title:"Cem Adrian - Ay Gız",
+			mp3:"./musics/Cem-Adrian/Cem-Adrian-Ay-Giz.mp3"
+		},
+		{
+			title:"Cem Adrian - Ayrılık",
+			mp3:"./musics/Cem-Adrian/Cem-Adrian-Ayrilik.mp3"
+		},
+		{
+			title:"Cem Adrian - Ben Annemi Özledim",
+			mp3:"./musics/Cem-Adrian/Cem-Adrian-Ben-Annemi-Ozledim.mp3"
+		},
+		{
+			title:"Cem Adrian - Çanakkale Türküsü",
+			mp3:"./musics/Cem-Adrian/Cem-Adrian-Canakkale-Turkusu.mp3"
+		},
+		{
+			title:"Cem Adrian - Dostum",
+			mp3:"./musics/Cem-Adrian/Cem-Adrian-Dostum.mp3"
+		},
+		{
+			title:"Cem Adrian - Geçti Dostlar Kervanı",
+			mp3:"./musics/Cem-Adrian/Cem-Adrian-Gecti-Dostlar-Kervani.mp3"
+		},
+		{
+			title:"Cem Adrian - Gel Gör Beni",
+			mp3:"./musics/Cem-Adrian/Cem-Adrian-Gel-Gor-Beni.mp3"
+		},
+		{
+			title:"Cem Adrian - Odam Kireçtir Benim",
+			mp3:"./musics/Cem-Adrian/Cem-Adrian-Odam-Kirectir-Benim.mp3"
+		},
+		{
+			title:"Cem Adrian - Yemen Türküsü",
+			mp3:"./musics/Cem-Adrian/Cem-Adrian-Yemen-Turkusu.mp3"
+		},/* Müzik Ekle */
+	], {
+		swfPath: "../../dist/jplayer",
+		supplied: "oga, mp3",
+		wmode: "window",
+		volume: 1.0,
+		useStateClassSkin: true,
+		autoBlur: false,
+		smoothPlayBar: true,
+		keyEnabled: true
+	});
+});
+//]]>
+</script>
+</head>
+<body>
+<script type="text/javascript" src="banner.js"></script>
+<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+	<div class="jp-type-playlist">
+		<div class="jp-gui jp-interface">
+			<div class="jp-progress">
+				<div class="jp-seek-bar">
+					<div class="jp-play-bar"></div>
+				</div>
+			</div>
+			<div class="jp-time-holder">
+				<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+				<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+			</div>
+			<div class="jp-toggles">
+				<button class="jp-repeat" role="button" tabindex="0">repeat</button>
+				<button class="jp-shuffle" role="button" tabindex="0">shuffle</button>
+				<button class="px-download" role="button" tabindex="0" onclick="DownloadList();">download</button>
+				<button class="px-youtube" role="button" tabindex="0" style="width:11.5%;" onclick="YoutubeList();">youtube</button>
+			</div>
+			<div class="jp-controls">
+				<button class="jp-previous" role="button" tabindex="0">previous</button>
+				<button class="jp-play" role="button" tabindex="0">play</button>
+				<button class="jp-next" role="button" tabindex="0">next</button>
+			</div>
+		</div>
+	                <div>
+			<div style="display:block;" class="jp-playlist" id="jp-playlist">
+				<ul>
+					<li>&nbsp;</li>
+				</ul>
+			</div>
+			<div style="display:none;" class="download-playlist" id="download-playlist">
+				<br>
+				<div style="cursor:pointer;" onclick="PlayList();"><a style="color:black;padding-left:40px;font-size:32px;">Müzik Listesine Geri Dön</a></div><br><hr>
+				<div class="download-playlist-item"><a class="dp-item" href="./musics/Cem-Adrian/Cem-Adrian-Ah-Bir-Atas-Ver.mp3" download>Cem Adrian - Ah Bir Ataş Ver</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="./musics/Cem-Adrian/Cem-Adrian-Al-Fadimem.mp3" download>Cem Adrian - Al Fadimem</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="./musics/Cem-Adrian/Cem-Adrian-Ay-Giz.mp3" download>Cem Adrian - Ay Gız</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="./musics/Cem-Adrian/Cem-Adrian-Ayrilik.mp3" download>Cem Adrian - Ayrılık</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="./musics/Cem-Adrian/Cem-Adrian-Ben-Annemi-Ozledim.mp3" download>Cem Adrian - Ben Annemi Özledim</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="./musics/Cem-Adrian/Cem-Adrian-Canakkale-Turkusu.mp3" download>Cem Adrian - Çanakkale Türküsü</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="./musics/Cem-Adrian/Cem-Adrian-Dostum.mp3" download>Cem Adrian - Dostum</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="./musics/Cem-Adrian/Cem-Adrian-Gecti-Dostlar-Kervani.mp3" download>Cem Adrian - Geçti Dostlar Kervanı</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="./musics/Cem-Adrian/Cem-Adrian-Gel-Gor-Beni.mp3" download>Cem Adrian - Gel Gör Beni</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="./musics/Cem-Adrian/Cem-Adrian-Odam-Kirectir-Benim.mp3" download>Cem Adrian - Odam Kireçtir Benim</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="./musics/Cem-Adrian/Cem-Adrian-Yemen-Turkusu.mp3" download>Cem Adrian - Yemen Türküsü</a></div>
+				<!-- [Download Ekle] !-->
+			</div>
+			<div style="display:none;" class="youtube-playlist" id="youtube-playlist">
+				<br>
+				<div style="cursor:pointer;" onclick="PlayList();"><a style="color:black;padding-left:40px;font-size:32px;">Müzik Listesine Geri Dön</a></div><br><hr>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=jMWNkJIwlqI', '_blank');"><a class="yt-item">Cem Adrian - Ah Bir Ataş Ver</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=wHX9T2BQ7p0', '_blank');"><a class="yt-item">Cem Adrian - Al Fadimem</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=XvOi3X_BG-E', '_blank');"><a class="yt-item">Cem Adrian - Ay Gız</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=8HH_m6F52UE', '_blank');"><a class="yt-item">Cem Adrian - Ayrılık</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=vENeJBTInoE', '_blank');"><a class="yt-item">Cem Adrian - Ben Annemi Özledim</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=F58b8Y4NEeE', '_blank');"><a class="yt-item">Cem Adrian - Çanakkale Türküsü</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=vun8xeFUM8Q', '_blank');"><a class="yt-item">Cem Adrian - Dostum</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=Cb06UcM7uWw', '_blank');"><a class="yt-item">Cem Adrian - Geçti Dostlar Kervanı</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=ZzuinHbGZ5g', '_blank');"><a class="yt-item">Cem Adrian - Gel Gör Beni</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=uZMd1aKPlts', '_blank');"><a class="yt-item">Cem Adrian - Odam Kireçtir Benim</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=GxBRQd3ZPlM', '_blank');"><a class="yt-item">Cem Adrian - Yemen Türküsü</a></div>
+				<!-- [Youtube Ekle] !-->
+			</div>
+		</div>
+		<div class="jp-no-solution">
+			<span>Update Required</span>
+			Flash Player Desteklenmiyor. Lütfen <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a> Indirin.
+		</div>
+	</div>
+</div>
+<br/>
+<div style="width:100%">
+		<div id="Albumler">
+			<pre class="px-pre"><font class="px-prefont"><center>Sanatçının Diğer Albümleri :</font></center></pre> 
+                                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Cem-Adrian.html';"><font class="px-fontindiv"><center>Cem Adrianin Tüm Şarkıları</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Cem-Adrian-Ben-Bu-Sarkiyi-Sana-Yazdim.html';"><font class="px-fontindiv"><center>Cem Adrian - Ben Bu Şarkıyı Sana Yazdım</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Cem-Adrian-Ask-Bu-Gece-Sehri-Terk-Etti.html';"><font class="px-fontindiv"><center>Cem Adrian - Aşk Bu Gece Şehri Terk Etti</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Cem-Adrian-Emir.html';"><font class="px-fontindiv"><center>Cem Adrian - Emir</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Cem-Adrian-Kayip-Cocuk-Masallari.html';"><font class="px-fontindiv"><center>Cem Adrian - Kayıp Çocuk Masalları</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Cem-Adrian-Siyah-Bir-Veda-Opucugu.html';"><font class="px-fontindiv"><center>Cem Adrian - Siyah Bir Veda Öpücüğü</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Cem-Adrian-Sana-Bunlari-Hic-Bilmedigin-Bir-Yerden-Yaziyorum.html';"><font class="px-fontindiv"><center>Cem Adrian - Sana Bunları Hiç Bilmediğin Bir Yerden Yazıyorum</font></center></div> 
+                                <!-- Albüm Adı Ekle !-->
+		</div>
+		<script type="text/javascript" src="news.js"></script>
+	</div>
+<br/>
+<br/>
+<br/>
+<div class="px-son">
+<br/>
+<br/>
+<font class="px-fontinson" color=white><center>istek, şikayet ve öneri için <a style="color:#ccc;">fatih.yarligan@outlook.com</a></center></font>
+</div>
+</body>
+
+</html>

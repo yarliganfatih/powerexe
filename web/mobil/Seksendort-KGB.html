@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Seksendört - K.G.B - PowereXe Müzik</title>
+<link rel='shortcut icon' type='image/x-icon' href='../favicon.png' />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="jplayer.red.exe.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../jquery.min.js"></script>
+<script type="text/javascript" src="../jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="../jplayer.playlist.min.js"></script>
+<script type="text/javascript" src="../functions.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	new jPlayerPlaylist({
+		jPlayer: "#jquery_jplayer_1",
+		cssSelectorAncestor: "#jp_container_1"
+	}, [
+		
+		{
+			title:"Seksendört - Azap",
+			mp3:"../musics/Seksendort/Seksendort-Azap.mp3"
+		},
+		{
+			title:"Seksendört - Belki",
+			mp3:"../musics/Seksendort/Seksendort-Belki.mp3"
+		},
+		{
+			title:"Seksendört - Dört Duvar",
+			mp3:"../musics/Seksendort/Seksendort-Dort-Duvar.mp3"
+		},
+		{
+			title:"Seksendört - Gecelik Aşk",
+			mp3:"../musics/Seksendort/Seksendort-Gecelik-Ask.mp3"
+		},
+		{
+			title:"Seksendört - Kara Gözlüm",
+			mp3:"../musics/Seksendort/Seksendort-Kara-Gozum.mp3"
+		},
+		{
+			title:"Seksendört - K.G.B",
+			mp3:"../musics/Seksendort/Seksendort-K-G-B.mp3"
+		},
+		{
+			title:"Seksendört - miyim",
+			mp3:"../musics/Seksendort/Seksendort-Miyim.mp3"
+		},
+		{
+			title:"Seksendört - Olmuyor",
+			mp3:"../musics/Seksendort/Seksendort-Olmuyor.mp3"
+		},
+		{
+			title:"Seksendört - Rol Yapma",
+			mp3:"../musics/Seksendort/Seksendort-Rol-Yapma.mp3"
+		},
+		{
+			title:"Seksendört - Ses Tiryakisi",
+			mp3:"../musics/Seksendort/Seksendort-Ses-Tiryakisi.mp3"
+		},
+		{
+			title:"Seksendört - Yüzün Var mı?",
+			mp3:"../musics/Seksendort/Seksendort-Yuzun-Varmi.mp3"
+		}/* Müzik Ekle */
+	], {
+		swfPath: "../../dist/jplayer",
+		supplied: "oga, mp3",
+		wmode: "window",
+		volume: 1.0,
+		useStateClassSkin: true,
+		autoBlur: false,
+		smoothPlayBar: true,
+		keyEnabled: true
+	});
+});
+//]]>
+</script>
+</head>
+<body>
+<script type="text/javascript" src="banner.js"></script>
+<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+	<div class="jp-type-playlist">
+		<div class="jp-gui jp-interface">
+			<div class="jp-progress">
+				<div class="jp-seek-bar">
+					<div class="jp-play-bar"></div>
+				</div>
+			</div>
+			<div class="jp-time-holder">
+				<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+				<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+			</div>
+			<div class="jp-toggles">
+				<button class="jp-repeat" role="button" tabindex="0">repeat</button>
+				<button class="jp-shuffle" role="button" tabindex="0">shuffle</button>
+				<button class="px-download" role="button" tabindex="0" onclick="DownloadList();">download</button>
+				<button class="px-youtube" role="button" tabindex="0" style="width:11.5%;" onclick="YoutubeList();">youtube</button>
+			</div>
+			<div class="jp-controls">
+				<button class="jp-previous" role="button" tabindex="0">previous</button>
+				<button class="jp-play" role="button" tabindex="0">play</button>
+				<button class="jp-next" role="button" tabindex="0">next</button>
+			</div>
+		</div>
+	                <div>
+			<div style="display:block;" class="jp-playlist" id="jp-playlist">
+				<ul>
+					<li>&nbsp;</li>
+				</ul>
+			</div>
+			<div style="display:none;" class="download-playlist" id="download-playlist">
+				<br>
+				<div style="cursor:pointer;" onclick="PlayList();"><a style="color:black;padding-left:40px;font-size:32px;">Müzik Listesine Geri Dön</a></div><br><hr>
+				<div class="download-playlist-item"><a class="dp-item" href="../musics/Seksendort/Seksendort-Azap.mp3" download>Seksendört - Azap</a></div>
+					<div class="download-playlist-item"><a class="dp-item" href="../musics/Seksendort/Seksendort-Belki.mp3" download>Seksendört - Belki</a></div>
+					<div class="download-playlist-item"><a class="dp-item" href="../musics/Seksendort/Seksendort-Dort-Duvar.mp3" download>Seksendört - Dört Duvar</a></div>
+					<div class="download-playlist-item"><a class="dp-item" href="../musics/Seksendort/Seksendort-Gecelik-Ask.mp3" download>Seksendört - Gecelik Aşk</a></div>
+					<div class="download-playlist-item"><a class="dp-item" href="../musics/Seksendort/Seksendort-Kara-Gozum.mp3" download>Seksendört - Kara Gözlüm</a></div>
+					<div class="download-playlist-item"><a class="dp-item" href="../musics/Seksendort/Seksendort-K-G-B.mp3" download>Seksendört - K.G.B</a></div>
+					<div class="download-playlist-item"><a class="dp-item" href="../musics/Seksendort/Seksendort-Miyim.mp3" download>Seksendört - miyim</a></div>
+					<div class="download-playlist-item"><a class="dp-item" href="../musics/Seksendort/Seksendort-Olmuyor.mp3" download>Seksendört - Olmuyor</a></div>
+					<div class="download-playlist-item"><a class="dp-item" href="../musics/Seksendort/Seksendort-Rol-Yapma.mp3" download>Seksendört - Rol Yapma</a></div>
+					<div class="download-playlist-item"><a class="dp-item" href="../musics/Seksendort/Seksendort-Ses-Tiryakisi.mp3" download>Seksendört - Ses Tiryakisi</a></div>
+					<div class="download-playlist-item"><a class="dp-item" href="../musics/Seksendort/Seksendort-Yuzun-Varmi.mp3" download>Seksendört - Yüzün Var mı?</a></div>
+					<!-- [Download Ekle] !-->
+			</div>
+			<div style="display:none;" class="youtube-playlist" id="youtube-playlist">
+				<br>
+				<div style="cursor:pointer;" onclick="PlayList();"><a style="color:black;padding-left:40px;font-size:32px;">Müzik Listesine Geri Dön</a></div><br><hr>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=kVwuwbH-alc', '_blank');"><a class="yt-item">Seksendört - Azap</a></div>
+					<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=dQ6noKQg4R4', '_blank');"><a class="yt-item">Seksendört - Belki</a></div>
+					<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=w02ByvmHdcE', '_blank');"><a class="yt-item">Seksendört - Dört Duvar</a></div>
+					<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=mgD_oIbxPWs', '_blank');"><a class="yt-item">Seksendört - Gecelik Aşk</a></div>
+					<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=UGTOcif8Y7o', '_blank');"><a class="yt-item">Seksendört - Kara Gözlüm</a></div>
+					<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=iX04t8dw4ew', '_blank');"><a class="yt-item">Seksendört - K.G.B</a></div>
+					<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=wxCi_1EkC5c', '_blank');"><a class="yt-item">Seksendört - miyim</a></div>
+					<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=n4nHkoso2PY', '_blank');"><a class="yt-item">Seksendört - Olmuyor</a></div>
+					<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=mBpMobW1uJo', '_blank');"><a class="yt-item">Seksendört - Rol Yapma</a></div>
+					<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=tSPLuQzdBQU', '_blank');"><a class="yt-item">Seksendört - Ses Tiryakisi</a></div>
+					<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=naVsJFM6yto', '_blank');"><a class="yt-item">Seksendört - Yüzün Var mı?</a></div>
+					<!-- [Youtube Ekle] !-->
+			</div>
+		</div>
+		<div class="jp-no-solution">
+			<span>Update Required</span>
+			Flash Player Desteklenmiyor. Lütfen <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a> Indirin.
+		</div>
+	</div>
+</div>
+<br/>
+<div style="width:100%">
+		<div id="Albumler">
+			<pre class="px-pre"><font class="px-prefont"><center>Sanatçının Diğer Albümleri :</font></center></pre>
+		    <div class="px-divinpre" onclick="location.href='Seksendort.html';"><font class="px-fontindiv"><center>Seksendört Tüm Müzikleri</font></center></div>
+			<div class="px-divinpre" onclick="location.href='Seksendort-Seksendort.html';"><font class="px-fontindiv"><center>Seksendört - Seksendört</font></center></div>	
+			<div class="px-divinpre" onclick="location.href='Seksendort-Akiyor-Zaman.html';"><font class="px-fontindiv"><center>Seksendört - Akıyor Zaman</font></center></div>	
+		</div>
+		<script type="text/javascript" src="news.js"></script>
+	</div>
+<br/>
+<br/>
+<br/>
+<div class="px-son">
+<br/>
+<br/>
+<font class="px-fontinson" color=white><center>istek, şikayet ve öneri için <a style="color:#ccc;">fatih-yarligan@outlook.com</a></center></font>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Gripin - Gripin - PowereXe Müzik</title>
+<link rel='shortcut icon' type='image/x-icon' href='favicon.png' />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="jplayer.red.exe.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()))
+if(mobile){
+document.location="../mobil/Gripin-Gripin.html";
+}</script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="jplayer.playlist.min.js"></script>
+<script type="text/javascript" src="functions.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	new jPlayerPlaylist({
+		jPlayer: "#jquery_jplayer_1",
+		cssSelectorAncestor: "#jp_container_1"
+	}, [
+		
+		{
+			title:"Gripin - Baba Mesleği ft Ferman Akgül",
+			mp3:"http://powerexemusic.netne.net/Gripin/Gripin-Baba-Meslegi-ft-Ferman-Akgul.mp3"
+		},
+		{
+			title:"Gripin - Ben Sensiz İstanbula Düşmanım ft Emre Aydın",
+			mp3:"http://powerexemusic.netne.net/Gripin/Gripin-Ben-Sensiz-Istanbula-Dusmanim-ft-Emre-Aydin.mp3"
+		},
+		{
+			title:"Gripin - Böyle Kahpedir Dünya",
+			mp3:"http://powerexemusic.netne.net/Gripin/Gripin-Boyle-Kahpedir-Dunya.mp3"
+		},
+		{
+			title:"Gripin - Dalgalandımda Duruldum",
+			mp3:"http://powerexemusic.netne.net/Gripin/Gripin-Dalgalandimda-Duruldum.mp3"
+		},
+		{
+			title:"Gripin - Dört",
+			mp3:"http://powerexemusic.netne.net/Gripin/Gripin-Dort.mp3"
+		},
+		{
+			title:"Gripin - Baba Mesleği ft Ferman Akgül",
+			mp3:"http://powerexemusic.netne.net/Gripin/Gripin-Baba-Meslegi-ft-Ferman-Akgul.mp3"
+		},
+		{
+			title:"Gripin - Hiç Gelme Gideceksen",
+			mp3:"http://powerexemusic.netne.net/Gripin/Gripin-Hic-Gelme-Gideceksen.mp3"
+		},
+		{
+			title:"Gripin - Olduğu Kadar",
+			mp3:"http://powerexemusic.netne.net/Gripin/Gripin-Oldugu-Kadar.mp3"
+		},
+		{
+			title:"Gripin - Sana Ne Bundan",
+			mp3:"http://powerexemusic.netne.net/Gripin/Gripin-Sana-Ne-Bundan.mp3"
+		},
+		{
+			title:"Gripin - Sustukların Büyür İçinde",
+			mp3:"http://powerexemusic.netne.net/Gripin/Gripin-Sustuklarin-Buyur-Icinde.mp3"
+		},
+		{
+			title:"Gripin - Zamana Bırakma Bizi ft maNga",
+			mp3:"http://powerexemusic.netne.net/Gripin/Gripin-Zamana-Birakma-Bizi-ft-maNga.mp3"
+		},
+		{
+			title:"Gripin - Zor Geliyor ft Pamela",
+			mp3:"http://powerexemusic.netne.net/Gripin/Gripin-Zor-Geliyor-ft-Pamela.mp3"
+		},/* Müzik Ekle */
+	], {
+		swfPath: "../../dist/jplayer",
+		supplied: "oga, mp3",
+		wmode: "window",
+		volume: 1.0,
+		useStateClassSkin: true,
+		autoBlur: false,
+		smoothPlayBar: true,
+		keyEnabled: true
+	});
+});
+//]]>
+</script>
+</head>
+<body>
+<script type="text/javascript" src="banner.js"></script>
+<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+	<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+		<div class="jp-type-playlist">
+			<div class="jp-gui jp-interface">
+				<div class="jp-controls">
+					<button class="jp-previous" role="button" tabindex="0">previous</button>
+					<button class="jp-play" role="button" tabindex="0">play</button>
+					<button class="jp-next" role="button" tabindex="0">next</button>
+				</div>
+				<div class="jp-progress">
+					<div class="jp-seek-bar">
+						<div class="jp-play-bar"></div>
+					</div>
+				</div>
+				<div class="jp-time-holder">
+					<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+					<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+				</div>
+				<div class="jp-toggles">
+					<button class="jp-repeat" role="button" tabindex="0">repeat</button>
+					<button class="jp-shuffle" role="button" tabindex="0">shuffle</button>
+					<button class="px-download" role="button" tabindex="0" style="width:30px;height:30px;" onclick="DownloadList();">download</button>
+					<button class="px-youtube" role="button" tabindex="0" style="width:45px;height:32px;" onclick="YoutubeList();">youtube</button>
+				</div>
+			</div>
+			<div style="width:70%;">
+				<div style="display:block;" class="jp-playlist" id="jp-playlist">
+					<ul>
+						<li>&nbsp;</li>
+					</ul>
+				</div>
+				<div style="display:none;" class="download-playlist" id="download-playlist">
+					<br>
+					<div style="cursor:pointer;" onclick="PlayList();"><a style="color:black;padding-left:20px;">Müzik Listesine Geri Dön</a></div><hr>
+					<div class="download-playlist-item"><a class="dp-item" href="http://powerexemusic.netne.net/Gripin/Gripin-Baba-Meslegi-ft-Ferman-Akgul.mp3" download>Gripin - Baba Mesleği ft Ferman Akgül</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="http://powerexemusic.netne.net/Gripin/Gripin-Ben-Sensiz-Istanbula-Dusmanim-ft-Emre-Aydin.mp3" download>Gripin - Ben Sensiz İstanbula Düşmanım ft Emre Aydın</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="http://powerexemusic.netne.net/Gripin/Gripin-Boyle-Kahpedir-Dunya.mp3" download>Gripin - Böyle Kahpedir Dünya</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="http://powerexemusic.netne.net/Gripin/Gripin-Dalgalandimda-Duruldum.mp3" download>Gripin - Dalgalandımda Duruldum</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="http://powerexemusic.netne.net/Gripin/Gripin-Dort.mp3" download>Gripin - Dört</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="http://powerexemusic.netne.net/Gripin/Gripin-Baba-Meslegi-ft-Ferman-Akgul.mp3" download>Gripin - Baba Mesleği ft Ferman Akgül</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="http://powerexemusic.netne.net/Gripin/Gripin-Hic-Gelme-Gideceksen.mp3" download>Gripin - Hiç Gelme Gideceksen</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="http://powerexemusic.netne.net/Gripin/Gripin-Oldugu-Kadar.mp3" download>Gripin - Olduğu Kadar</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="http://powerexemusic.netne.net/Gripin/Gripin-Sana-Ne-Bundan.mp3" download>Gripin - Sana Ne Bundan</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="http://powerexemusic.netne.net/Gripin/Gripin-Sustuklarin-Buyur-Icinde.mp3" download>Gripin - Sustukların Büyür İçinde</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="http://powerexemusic.netne.net/Gripin/Gripin-Zamana-Birakma-Bizi-ft-maNga.mp3" download>Gripin - Zamana Bırakma Bizi ft maNga</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="http://powerexemusic.netne.net/Gripin/Gripin-Zor-Geliyor-ft-Pamela.mp3" download>Gripin - Zor Geliyor ft Pamela</a></div>
+				<!-- [Download Ekle] !-->
+				</div>
+				<div style="display:none;" class="youtube-playlist" id="youtube-playlist">
+					<br>
+					<div style="cursor:pointer;" onclick="PlayList();"><a style="color:black;padding-left:20px;">Müzik Listesine Geri Dön</a></div><hr>
+					<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=jrGKnDtgxdg', '_blank');"><a class="yt-item">Gripin - Baba Mesleği ft Ferman Akgül</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=JP4kValjHmw', '_blank');"><a class="yt-item">Gripin - Ben Sensiz İstanbula Düşmanım ft Emre Aydın</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=FQcdTxzzL4I', '_blank');"><a class="yt-item">Gripin - Böyle Kahpedir Dünya</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=BTmml0itL2U', '_blank');"><a class="yt-item">Gripin - Dalgalandımda Duruldum</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=IXmlUSDtHdM', '_blank');"><a class="yt-item">Gripin - Dört</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=jrGKnDtgxdg', '_blank');"><a class="yt-item">Gripin - Baba Mesleği ft Ferman Akgül</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=dMcmIAeW4to', '_blank');"><a class="yt-item">Gripin - Hiç Gelme Gideceksen</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=S0ZhMydvaG4', '_blank');"><a class="yt-item">Gripin - Olduğu Kadar</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=qSoeH8INZ0g', '_blank');"><a class="yt-item">Gripin - Sana Ne Bundan</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=bDuZ02lD8go', '_blank');"><a class="yt-item">Gripin - Sustukların Büyür İçinde</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=2duz3JCZq5s', '_blank');"><a class="yt-item">Gripin - Zamana Bırakma Bizi ft maNga</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=5sjOgfwGdJU', '_blank');"><a class="yt-item">Gripin - Zor Geliyor ft Pamela</a></div>
+				<!-- [Youtube Ekle] !-->
+				</div>
+				<div class="jp-no-solution">
+					<span>Update Required</span>
+					Flash Player Desteklenmiyor. Lütfen <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a> Indirin.
+				</div>
+			</div>
+	</div>
+</div>
+<div class="px-rightdiv">
+	<div id="Albumler">
+		<pre class="px-pre"><font class="px-prefont"><center>Sanatçının Diğer Albümleri :</font></center></pre>
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Gripin.html';"><font class="px-fontindiv"><center>Gripinin Tüm Şarkıları</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Gripin-M.S.-05-03-2010.html';"><font class="px-fontindiv"><center>Gripin - M.S. 05 03 2010</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Gripin-Hikayeler-Anlatildi.html';"><font class="px-fontindiv"><center>Gripin - Hikayeler Anlatıldı</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Gripin-Yalnizligin-Caresini-Bulmuslar.html';"><font class="px-fontindiv"><center>Gripin - Yalnızlığın Çaresini Bulmuşlar</font></center></div> 
+                                <!-- Albüm Adı Ekle !-->
+	</div>
+	<script type="text/javascript" src="news.js"></script>
+</div>
+<br/>
+<div class="px-son">
+<br/><font class="px-fontinson" color=white><center>istek, şikayet ve öneri için <a style="color:#ccc;">fatih.yarligan@outlook.com</a></center></font>
+<hr/><font class="px-fontinson" color=white><center>design by <a style="color:#ccc;">Fatih Yarlıgan</a></center></font>
+</div>
+</body>
+
+</html>

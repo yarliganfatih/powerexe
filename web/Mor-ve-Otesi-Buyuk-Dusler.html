@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Mor ve Ötesi - Buyuk Dusler - PowereXe Müzik</title>
+<link rel='shortcut icon' type='image/x-icon' href='favicon.png' />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="jplayer.red.exe.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()))
+if(mobile){
+document.location="../mobil/Mor-ve-Otesi-Buyuk-Dusler.html";
+}</script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="jplayer.playlist.min.js"></script>
+<script type="text/javascript" src="functions.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	new jPlayerPlaylist({
+		jPlayer: "#jquery_jplayer_1",
+		cssSelectorAncestor: "#jp_container_1"
+	}, [
+		
+		{
+			title:"Mor ve Ötesi - Ayıp Olmaz mı",
+			mp3:"http://powerexemusic.netne.net/Mor-ve-Otesi/Mor-ve-Otesi-Ayip-Olmaz-mi.mp3"
+		},
+		{
+			title:"Mor ve Ötesi - Büyük Düşler",
+			mp3:"http://powerexemusic.netne.net/Mor-ve-Otesi/Mor-ve-Otesi-Buyuk-Dusler.mp3"
+		},
+		{
+			title:"Mor ve Ötesi - Çocuklar ve Hayvanlar",
+			mp3:"http://powerexemusic.netne.net/Mor-ve-Otesi/Mor-ve-Otesi-Cocuklar-ve-Hayvanlar.mp3"
+		},
+		{
+			title:"Mor ve Ötesi - Darbe",
+			mp3:"http://powerexemusic.netne.net/Mor-ve-Otesi/Mor-ve-Otesi-Darbe.mp3"
+		},
+		{
+			title:"Mor ve Ötesi - Durma Öyle",
+			mp3:"http://powerexemusic.netne.net/Mor-ve-Otesi/Mor-ve-Otesi-Durma-Oyle.mp3"
+		},
+		{
+			title:"Mor ve Ötesi - Kördüğüm",
+			mp3:"http://powerexemusic.netne.net/Mor-ve-Otesi/Mor-ve-Otesi-Kordugum.mp3"
+		},
+		{
+			title:"Mor ve Ötesi - Küçük Sevgilim",
+			mp3:"http://powerexemusic.netne.net/Mor-ve-Otesi/Mor-ve-Otesi-Kucuk-Sevgilim.mp3"
+		},
+		{
+			title:"Mor ve Ötesi - Parti",
+			mp3:"http://powerexemusic.netne.net/Mor-ve-Otesi/Mor-ve-Otesi-Parti.mp3"
+		},
+		{
+			title:"Mor ve Ötesi - Saklama",
+			mp3:"http://powerexemusic.netne.net/Mor-ve-Otesi/Mor-ve-Otesi-Saklama.mp3"
+		},
+		{
+			title:"Mor ve Ötesi - Sonu Belli",
+			mp3:"http://powerexemusic.netne.net/Mor-ve-Otesi/Mor-ve-Otesi-Sonu-Belli.mp3"
+		},
+		{
+			title:"Mor ve Ötesi - Şirket",
+			mp3:"http://powerexemusic.netne.net/Mor-ve-Otesi/Mor-ve-Otesi-Sirket.mp3"
+		},/* Müzik Ekle */
+	], {
+		swfPath: "../../dist/jplayer",
+		supplied: "oga, mp3",
+		wmode: "window",
+		volume: 1.0,
+		useStateClassSkin: true,
+		autoBlur: false,
+		smoothPlayBar: true,
+		keyEnabled: true
+	});
+});
+//]]>
+</script>
+</head>
+<body>
+<script type="text/javascript" src="banner.js"></script>
+<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+	<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+		<div class="jp-type-playlist">
+			<div class="jp-gui jp-interface">
+				<div class="jp-controls">
+					<button class="jp-previous" role="button" tabindex="0">previous</button>
+					<button class="jp-play" role="button" tabindex="0">play</button>
+					<button class="jp-next" role="button" tabindex="0">next</button>
+				</div>
+				<div class="jp-progress">
+					<div class="jp-seek-bar">
+						<div class="jp-play-bar"></div>
+					</div>
+				</div>
+				<div class="jp-time-holder">
+					<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+					<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+				</div>
+				<div class="jp-toggles">
+					<button class="jp-repeat" role="button" tabindex="0">repeat</button>
+					<button class="jp-shuffle" role="button" tabindex="0">shuffle</button>
+					<button class="px-download" role="button" tabindex="0" style="width:30px;height:30px;" onclick="DownloadList();">download</button>
+					<button class="px-youtube" role="button" tabindex="0" style="width:45px;height:32px;" onclick="YoutubeList();">youtube</button>
+				</div>
+			</div>
+			<div style="width:70%;">
+				<div style="display:block;" class="jp-playlist" id="jp-playlist">
+					<ul>
+						<li>&nbsp;</li>
+					</ul>
+				</div>
+				<div style="display:none;" class="download-playlist" id="download-playlist">
+					<br>
+					<div style="cursor:pointer;" onclick="PlayList();"><a style="color:black;padding-left:20px;">Müzik Listesine Geri Dön</a></div><hr>
+					<div class="download-playlist-item"><a class="dp-item" href="http://powerexemusic.netne.net/Mor-ve-Otesi/Mor-ve-Otesi-Ayip-Olmaz-mi.mp3" download>Mor ve Ötesi - Ayıp Olmaz mı</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="http://powerexemusic.netne.net/Mor-ve-Otesi/Mor-ve-Otesi-Buyuk-Dusler.mp3" download>Mor ve Ötesi - Büyük Düşler</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="http://powerexemusic.netne.net/Mor-ve-Otesi/Mor-ve-Otesi-Cocuklar-ve-Hayvanlar.mp3" download>Mor ve Ötesi - Çocuklar ve Hayvanlar</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="http://powerexemusic.netne.net/Mor-ve-Otesi/Mor-ve-Otesi-Darbe.mp3" download>Mor ve Ötesi - Darbe</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="http://powerexemusic.netne.net/Mor-ve-Otesi/Mor-ve-Otesi-Durma-Oyle.mp3" download>Mor ve Ötesi - Durma Öyle</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="http://powerexemusic.netne.net/Mor-ve-Otesi/Mor-ve-Otesi-Kordugum.mp3" download>Mor ve Ötesi - Kördüğüm</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="http://powerexemusic.netne.net/Mor-ve-Otesi/Mor-ve-Otesi-Kucuk-Sevgilim.mp3" download>Mor ve Ötesi - Küçük Sevgilim</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="http://powerexemusic.netne.net/Mor-ve-Otesi/Mor-ve-Otesi-Parti.mp3" download>Mor ve Ötesi - Parti</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="http://powerexemusic.netne.net/Mor-ve-Otesi/Mor-ve-Otesi-Saklama.mp3" download>Mor ve Ötesi - Saklama</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="http://powerexemusic.netne.net/Mor-ve-Otesi/Mor-ve-Otesi-Sonu-Belli.mp3" download>Mor ve Ötesi - Sonu Belli</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="http://powerexemusic.netne.net/Mor-ve-Otesi/Mor-ve-Otesi-Sirket.mp3" download>Mor ve Ötesi - Şirket</a></div>
+				<!-- [Download Ekle] !-->
+				</div>
+				<div style="display:none;" class="youtube-playlist" id="youtube-playlist">
+					<br>
+					<div style="cursor:pointer;" onclick="PlayList();"><a style="color:black;padding-left:20px;">Müzik Listesine Geri Dön</a></div><hr>
+					<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=_CgOLZMbILQ', '_blank');"><a class="yt-item">Mor ve Ötesi - Ayıp Olmaz mı</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=2GOst-Ucc44', '_blank');"><a class="yt-item">Mor ve Ötesi - Büyük Düşler</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=w1MSEreiedA', '_blank');"><a class="yt-item">Mor ve Ötesi - Çocuklar ve Hayvanlar</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=kcFMeBqkrrY', '_blank');"><a class="yt-item">Mor ve Ötesi - Darbe</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=ZL3jMiiZ3v4', '_blank');"><a class="yt-item">Mor ve Ötesi - Durma Öyle</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=P3ZyjRyouFg', '_blank');"><a class="yt-item">Mor ve Ötesi - Kördüğüm</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=OZitHMj25EA', '_blank');"><a class="yt-item">Mor ve Ötesi - Küçük Sevgilim</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=N8XvQqcj3hE', '_blank');"><a class="yt-item">Mor ve Ötesi - Parti</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=2sbmAuzaeZY', '_blank');"><a class="yt-item">Mor ve Ötesi - Saklama</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=ywdiQbK2U8E', '_blank');"><a class="yt-item">Mor ve Ötesi - Sonu Belli</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=VmgP1RWzIdI', '_blank');"><a class="yt-item">Mor ve Ötesi - Şirket</a></div>
+				<!-- [Youtube Ekle] !-->
+				</div>
+				<div class="jp-no-solution">
+					<span>Update Required</span>
+					Flash Player Desteklenmiyor. Lütfen <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a> Indirin.
+				</div>
+			</div>
+	</div>
+</div>
+<div class="px-rightdiv">
+	<div id="Albumler">
+		<pre class="px-pre"><font class="px-prefont"><center>Sanatçının Diğer Albümleri :</font></center></pre>
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Mor-ve-Otesi.html';"><font class="px-fontindiv"><center>Mor ve Ötesiin Tüm Şarkıları</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Mor-ve-Otesi-Birak-Zaman-Aksin.html';"><font class="px-fontindiv"><center>Mor ve Ötesi - Bırak Zaman Aksın</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Mor-ve-Otesi-Masumiyetin-Ziyan-Olmaz.html';"><font class="px-fontindiv"><center>Mor ve Ötesi - Masumiyetin Ziyan Olmaz</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Mor-ve-Otesi-Dunya-Yalan-Soyluyor.html';"><font class="px-fontindiv"><center>Mor ve Ötesi - Dunya Yalan Soyluyor</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Mor-ve-Otesi-Gunesi-Beklerken.html';"><font class="px-fontindiv"><center>Mor ve Ötesi - Gunesi Beklerken</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Mor-ve-Otesi-Gul-Kendine.html';"><font class="px-fontindiv"><center>Mor ve Ötesi - Gül Kendine</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Mor-ve-Otesi-Sehir.html';"><font class="px-fontindiv"><center>Mor ve Ötesi - Şehir</font></center></div> 
+                                <!-- Albüm Adı Ekle !-->
+	</div>
+	<script type="text/javascript" src="news.js"></script>
+</div>
+<br/>
+<div class="px-son">
+<br/><font class="px-fontinson" color=white><center>istek, şikayet ve öneri için <a style="color:#ccc;">fatih.yarligan@outlook.com</a></center></font>
+<hr/><font class="px-fontinson" color=white><center>design by <a style="color:#ccc;">Fatih Yarlıgan</a></center></font>
+</div>
+</body>
+
+</html>

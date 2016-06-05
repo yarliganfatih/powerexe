@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Duman - Seni Kendime Sakladım - PowereXe Müzik</title>
+<link rel='shortcut icon' type='image/x-icon' href='favicon.png' />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="jplayer.red.exe.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()))
+if(mobile){
+document.location="../mobil/Duman-Seni-Kendime-Sakladim.html";
+}</script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="jplayer.playlist.min.js"></script>
+<script type="text/javascript" src="functions.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	new jPlayerPlaylist({
+		jPlayer: "#jquery_jplayer_1",
+		cssSelectorAncestor: "#jp_container_1"
+	}, [
+		
+		{
+			title:"Duman - Aman Aman",
+			mp3:"musics/Duman/Aman-Aman.mp3"
+		},
+		{
+			title:"Duman - En Güzel Günüm Gecem",
+			mp3:"musics/Duman/En-Guzel-Gunum-Gecem.mp3"
+		},
+		{
+			title:"Duman - Geçmiş Olsun",
+			mp3:"musics/Duman/Gecmis-Olsun.mp3"
+		},
+		{
+			title:"Duman - Melek",
+			mp3:"musics/Duman/Melek.mp3"
+		},
+		{
+			title:"Duman - Özgürlüğün Ülkesi",
+			mp3:"musics/Duman/Ozgurlugun-Ulkesi.mp3"
+		},
+		{
+			title:"Duman - Rüyanda Görsen İnanma",
+			mp3:"musics/Duman/Ruyanda-Gorsen-Inanma.mp3"
+		},
+		{
+			title:"Duman - Sadece Koklayacaktın",
+			mp3:"musics/Duman/Sadece-Koklayacaktin.mp3"
+		},
+		{
+			title:"Duman - Sayın Bayan",
+			mp3:"musics/Duman/Sayin-Bayan.mp3"
+		},
+		{
+			title:"Duman - Sen Ben",
+			mp3:"musics/Duman/Sen-Ben.mp3"
+		},
+		{
+			title:"Duman - Seni Kendime Sakladım",
+			mp3:"musics/Duman/Seni-Kendime-Sakladim.mp3"
+		},
+		{
+			title:"Duman - Yanıbaşımdan",
+			mp3:"musics/Duman/Yanibasimdan.mp3"
+		},
+		{
+			title:"Duman - Yürekten",
+			mp3:"musics/Duman/Yurekten.mp3"
+		},/* Müzik Ekle */
+	], {
+		swfPath: "../../dist/jplayer",
+		supplied: "oga, mp3",
+		wmode: "window",
+		volume: 1.0,
+		useStateClassSkin: true,
+		autoBlur: false,
+		smoothPlayBar: true,
+		keyEnabled: true
+	});
+});
+//]]>
+</script>
+</head>
+<body>
+<script type="text/javascript" src="banner.js"></script>
+<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+	<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+		<div class="jp-type-playlist">
+			<div class="jp-gui jp-interface">
+				<div class="jp-controls">
+					<button class="jp-previous" role="button" tabindex="0">previous</button>
+					<button class="jp-play" role="button" tabindex="0">play</button>
+					<button class="jp-next" role="button" tabindex="0">next</button>
+				</div>
+				<div class="jp-progress">
+					<div class="jp-seek-bar">
+						<div class="jp-play-bar"></div>
+					</div>
+				</div>
+				<div class="jp-time-holder">
+					<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+					<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+				</div>
+				<div class="jp-toggles">
+					<button class="jp-repeat" role="button" tabindex="0">repeat</button>
+					<button class="jp-shuffle" role="button" tabindex="0">shuffle</button>
+					<button class="px-download" role="button" tabindex="0" style="width:30px;height:30px;" onclick="DownloadList();">download</button>
+					<button class="px-youtube" role="button" tabindex="0" style="width:45px;height:32px;" onclick="YoutubeList();">youtube</button>
+				</div>
+			</div>
+			<div style="width:70%;">
+				<div style="display:block;" class="jp-playlist" id="jp-playlist">
+					<ul>
+						<li>&nbsp;</li>
+					</ul>
+				</div>
+				<div style="display:none;" class="download-playlist" id="download-playlist">
+					<br>
+					<div style="cursor:pointer;" onclick="PlayList();"><a style="color:black;padding-left:20px;">Müzik Listesine Geri Dön</a></div><hr>
+					<div class="download-playlist-item"><a class="dp-item" href="musics/Duman/Aman-Aman.mp3" download>Duman - Aman Aman</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="musics/Duman/En-Guzel-Gunum-Gecem.mp3" download>Duman - En Güzel Günüm Gecem</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="musics/Duman/Gecmis-Olsun.mp3" download>Duman - Geçmiş Olsun</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="musics/Duman/Melek.mp3" download>Duman - Melek</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="musics/Duman/Ozgurlugun-Ulkesi.mp3" download>Duman - Özgürlüğün Ülkesi</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="musics/Duman/Ruyanda-Gorsen-Inanma.mp3" download>Duman - Rüyanda Görsen İnanma</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="musics/Duman/Sadece-Koklayacaktin.mp3" download>Duman - Sadece Koklayacaktın</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="musics/Duman/Sayin-Bayan.mp3" download>Duman - Sayın Bayan</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="musics/Duman/Sen-Ben.mp3" download>Duman - Sen Ben</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="musics/Duman/Seni-Kendime-Sakladim.mp3" download>Duman - Seni Kendime Sakladım</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="musics/Duman/Yanibasimdan.mp3" download>Duman - Yanıbaşımdan</a></div>
+				<div class="download-playlist-item"><a class="dp-item" href="musics/Duman/Yurekten.mp3" download>Duman - Yürekten</a></div>
+				<!-- [Download Ekle] !-->
+				</div>
+				<div style="display:none;" class="youtube-playlist" id="youtube-playlist">
+					<br>
+					<div style="cursor:pointer;" onclick="PlayList();"><a style="color:black;padding-left:20px;">Müzik Listesine Geri Dön</a></div><hr>
+					<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=dDzbfoRtqME', '_blank');"><a class="yt-item">Duman - Aman Aman</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=_o5yCxtQi1o', '_blank');"><a class="yt-item">Duman - En Güzel Günüm Gecem</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=SyPdMTa0d3k', '_blank');"><a class="yt-item">Duman - Geçmiş Olsun</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=7mSW4SshS4o', '_blank');"><a class="yt-item">Duman - Melek</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=xP1lzYGgDx4', '_blank');"><a class="yt-item">Duman - Özgürlüğün Ülkesi</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=Mwy-ZxbKoms', '_blank');"><a class="yt-item">Duman - Rüyanda Görsen İnanma</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=njbo3GkE4Zo', '_blank');"><a class="yt-item">Duman - Sadece Koklayacaktın</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=hiEeydHxXC8', '_blank');"><a class="yt-item">Duman - Sayın Bayan</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=WZ1GaWAkkfk', '_blank');"><a class="yt-item">Duman - Sen Ben</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=V47nffPavWI', '_blank');"><a class="yt-item">Duman - Seni Kendime Sakladım</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=yCRUks6o4aY', '_blank');"><a class="yt-item">Duman - Yanıbaşımdan</a></div>
+				<div class="youtube-playlist-item" onclick="window.open('https://www.youtube.com/watch?v=UQUA5rrGt48', '_blank');"><a class="yt-item">Duman - Yürekten</a></div>
+				<!-- [Youtube Ekle] !-->
+				</div>
+				<div class="jp-no-solution">
+					<span>Update Required</span>
+					Flash Player Desteklenmiyor. Lütfen <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a> Indirin.
+				</div>
+			</div>
+	</div>
+</div>
+<div class="px-rightdiv">
+	<div id="Albumler">
+		<pre class="px-pre"><font class="px-prefont"><center>Sanatçının Diğer Albümleri :</font></center></pre>
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Duman-Eski-Koprunun-Altinda.html';"><font class="px-fontindiv"><center>Eski Köprünün Altında</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Duman-Belki-Alismam-Lazim.html';"><font class="px-fontindiv"><center>Belki Alışmam Lazım</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Duman-Bu-Aksam.html';"><font class="px-fontindiv"><center>Bu Akşam</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Duman-Seni-Kendime-Sakladim.html';"><font class="px-fontindiv"><center>Seni Kendime Sakladım</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Duman-En-Guzel-Gunum-Gecem.html';"><font class="px-fontindiv"><center>En Güzel Günüm Gecem</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Duman-Rockn-Coke.html';"><font class="px-fontindiv"><center>Rock'n Coke</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Duman-Duman-1.html';"><font class="px-fontindiv"><center>Duman 1</font></center></div> 
+                                <div class="px-divinpre" style="cursor:pointer;" onclick="location.href='Duman-Duman-2.html';"><font class="px-fontindiv"><center>Duman 2</font></center></div> 
+                                <!-- Albüm Adı Ekle !-->
+	</div>
+	<script type="text/javascript" src="news.js"></script>
+</div>
+<br/>
+<div class="px-son">
+<br/><font class="px-fontinson" color=white><center>istek, şikayet ve öneri için <a style="color:#ccc;">fatih-yarligan@outlook.com</a></center></font>
+<hr/><font class="px-fontinson" color=white><center>design by <a style="color:#ccc;">Fatih Yarlıgan</a></center></font>
+</div>
+</body>
+
+</html>
